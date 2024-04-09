@@ -3,31 +3,58 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer pagina</title>
+    <title>Del Negro Services - Contacto</title>
+    <link rel="shortcut icon" href="fotos/logodn.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+
 </head>
 <body>
     <header>
-        <h1>Analisis de Negocios</h1>
-    
         <nav>
             <ul>
-                <li><a href="nosotros.html">Sobre nosotros</a></li>
-                <li><a href="casosexito.html">Casos de exito</a></li>
                 <li><a href="index.html">Pagina principal</a></li>
+                <li><a href="nosotros.html">Quienes somos</a></li>
             </ul>
         </nav>
-
-
-
-
     </header>
     <main>
         <h2>Contacto</h2>
+        <div class="formulario">
+            <div class="contacto_titulo">
+                <h2>¿Como podemos ayudarte?</h2>
+                <h3>Completá el siguiente formulario por un asunto en particular y nos comunicaremos con vos</h3>
+            </div>
+            <form>
+                <label for="nombre">Nombre completo</label><br>
+                <input type="text" placeholder="Escribe aqui tu nombre" name="nombre" id="nombre" required>
+                <br><br>
 
+                <label for="email">Ingrese su email</label><br>
+                <input type="email" placeholder="ejemplo@gmail.com" name="email" id="email" required>
+                <br><br>
+
+                <label for="asunto">Asunto</label><br>
+                <textarea name="asunto" id="asunto" cols="40" rows="2" required placeholder="Titulo del asunto"></textarea>
+                <br><br>
+            
+                <label for="mensaje">Escriba su mensaje</label><br>
+                <textarea name="mensaje" id="mensaje" cols="50" rows="10" required></textarea>
+                <br><br>
+            
+                <input class="btn" type="submit" value="Enviar">
+            </form>  
+        </div>
+
+        <div class="contacto_propio">
+            <h2>Recursos útiles</h2>
+                <h3>Telefono <br>11-6680-9610</h3>
+                <h3>Email<br>javier-dn@hotmail.com</h3>
+
+        </div>
     </main>
-    <footer>
 
+    <footer>
+        <h6>Esta pagina web esta reservada para uso facultativos</h6>
     </footer>
-    
 </body>
 </html>

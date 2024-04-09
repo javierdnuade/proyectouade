@@ -1,0 +1,38 @@
+body {
+    background-color: rgba(162, 184, 173, 0.548);   
+}
+header {
+    background-color: rgb(255, 255, 255);
+}
+
+.info{
+    text-align: center;
+}
+.info img{       
+    width: 200px;
+    border-radius: 50%;
+}
+
+.nosotros{
+    text-align: center;
+}
+.camara_vigilancia img {
+    width: 200px;
+}
+
+.formulario {
+    text-align: center;
+}
+
+.btn {
+    width: 150px;
+    border-radius: 10px;
+    border-color: white;
+}
+.contacto_propio {
+    text-align: center;
+}
+
+.trabajos img{
+    width: 200px;
+}
