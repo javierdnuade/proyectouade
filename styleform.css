@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family:'Poiret_One';
+}
+@font-face {
+    font-family: 'Poiret_One';
+    src: url(/fuentes/Poiret_One/PoiretOne-Regular.ttf);
+}
+
+body {
+    background-color: rgba(162, 184, 173, 0.548);   
+}
+.header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    /*background-color: rgb(255, 255, 255);
+    background-image: url(/fotos/fotoheader.jpg);*/
+    display: flex;
+    background-size:cover;
+    height: 14vh;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 5;
+    background-color: white;
+    /*background: linear-gradient(to right, #b5cee4 40%, #183c5f 100%);*/
+    box-shadow: 3px 3px 5px #011126 ;
+}
+main{
+    margin-top: 180px;
+}
+.nombre_servicio {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+}
+.info_header {
+    display: flex;
+    list-style-type: none;
+    margin-right: 90px;
+    gap: 30px;
+}
+.info_header button{
+    font-size: 1.5rem;
+    font-weight: bold;
+    padding: 5px 12px;
+    border-radius: 15px;
+    background-color:#D9D9D9;
+    color: black;
+    transition-duration: 0.7s;
+    
+}
+.info_header button:hover{
+    box-shadow: 3px 3px 15px #000000;
+    transform: scale(1.2);
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    font-size: 1.2rem;
+    padding: 40px;
+}
+.footer_logo {
+    width: 80px;
+}
+.separador {
+    margin: 100px 150px 0 150px;
+}
+
+#contacto_texto{
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+.conteiner_formulario {
+    padding-top: 20px;
+    margin: auto;
+    display: flex;
+    flex-flow: column wrap;
+    width: 80%;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 1px 1px 14px black;
+}
+.formtexto {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    height: 100px;
+
+}
+.formulario {
+    width: 100%;
+    grid-column-gap: 15%;
+    height: 600px;
+    display: grid;
+    grid-template-areas: "formnombre formmensaje formmensaje"
+                        "formemail formmensaje formmensaje"
+                        "formtelefono formmensaje formmensaje"
+                        "formasunto formarchivo formarchivo"
+                        "formenviar formenviar formenviar";
+}
+
+
+.form {
+    position: relative;
+    margin: auto;
+    font-size: 1.4rem;
+    text-align: left;
+    left: 50px;
+
+}
+.formnombre {
+    grid-area: formnombre;
+
+}
+.formmensaje {
+    grid-area: formmensaje;
+    text-align: left;
+
+}
+.formemail {
+    grid-area: formemail;
+}
+.formtelefono {
+    grid-area: formtelefono;
+}
+.formasunto {
+    grid-area: formasunto;
+    
+}
+.formarchivo {
+    grid-area: formarchivo;
+    font-size: 1.4rem;
+}
+   
+.form input {
+    width: 280px;
+    height: 40px;
+    font-size: 1.05rem;
+    border-radius: 10px;
+    font-weight: 600;
+    border: 1px solid black;
+    background-color: #D9D9D9;
+
+}
+textarea {
+    font-weight: 1000;
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #D9D9D9;
+
+
+}
+::placeholder {
+    opacity: 0.7;
+}
+.formenviar {
+    margin-top: 30px;
+    grid-area: formenviar;
+    display: flex;
+    justify-content: center;
+    width: 860px;
+    left: 0px;
+}
+.politicas_formulario{
+    width: 800px;
+    font-size: 1.3rem;
+    margin: 30px auto;
+    text-align: center;
+}
+.politicas {
+    margin-top: 20px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.btn {
+    transition: 1s;
+}
+.btn:hover {
+    transition: 1s;
+    scale: 1.2;
+}
