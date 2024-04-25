@@ -11,7 +11,7 @@
 }
 
 body {
-    background-color: rgba(162, 184, 173, 0.548);   
+    background-color: #a2b8ad8c;   
 }
 .header {
     top: 0;
@@ -20,15 +20,14 @@ body {
     /*background-color: rgb(255, 255, 255);
     background-image: url(/fotos/fotoheader.jpg);*/
     display: flex;
-    background-size:cover;
     height: 14vh;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     z-index: 5;
     background-color: white;
-    /*background: linear-gradient(to right, #b5cee4 40%, #183c5f 100%);*/
     box-shadow: 3px 3px 5px #011126 ;
+    gap: 20px;
 }
 main{
     margin-top: 180px;
@@ -65,6 +64,8 @@ footer {
     flex-flow: row wrap;
     font-size: 1.2rem;
     padding: 40px;
+    background: linear-gradient(to bottom, rgba(162, 184, 173, 0.549) , #ffffff  );
+    gap: 20px;
 }
 .footer_logo {
     width: 80px;
@@ -79,99 +80,92 @@ footer {
     font-size: 2.5em;
 }
 .conteiner_formulario {
-    padding-top: 20px;
     margin: auto;
-    display: flex;
-    flex-flow: column wrap;
     width: 80%;
     background-color: white;
     border-radius: 30px;
     box-shadow: 1px 1px 14px black;
 }
-.formtexto {
-    width: 100%;
-    display: flex;
-    flex-flow: column wrap;
-    text-align: center;
-    height: 100px;
 
+.titulo_formulario {
+    text-align: center;
+    padding: 20px 10px 0 10px;
 }
 .formulario {
+    margin:30px 0;
     width: 100%;
-    grid-column-gap: 15%;
-    height: 600px;
-    display: grid;
-    grid-template-areas: "formnombre formmensaje formmensaje"
-                        "formemail formmensaje formmensaje"
-                        "formtelefono formmensaje formmensaje"
-                        "formasunto formarchivo formarchivo"
-                        "formenviar formenviar formenviar";
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    gap: 20px;
 }
-
-
-.form {
-    position: relative;
+.formleft {
+    display: flex;
+    flex-direction: column; 
+    gap: 40px;
     margin: auto;
-    font-size: 1.4rem;
-    text-align: left;
-    left: 50px;
+    padding-left: 20px;
 
 }
-.formnombre {
-    grid-area: formnombre;
-
+.formright {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin: auto;
 }
-.formmensaje {
-    grid-area: formmensaje;
-    text-align: left;
-
-}
-.formemail {
-    grid-area: formemail;
-}
-.formtelefono {
-    grid-area: formtelefono;
-}
-.formasunto {
-    grid-area: formasunto;
-    
-}
-.formarchivo {
-    grid-area: formarchivo;
-    font-size: 1.4rem;
-}
-   
 .form input {
-    width: 280px;
+    width: 80%;
     height: 40px;
-    font-size: 1.05rem;
+    font-size: 18px;
     border-radius: 10px;
     font-weight: 600;
     border: 1px solid black;
     background-color: #D9D9D9;
 
 }
-textarea {
-    font-weight: 1000;
-    border-radius: 5px;
+.formulario textarea{
     border: 1px solid black;
     background-color: #D9D9D9;
+    border-radius: 5px;
+    font-weight: 1000;
+    font-size: 18px;
+}
 
-
+.formasunto textarea {
+    width: 80%;
+}
+.formmensaje textarea {
+    width: 90%;
+    height: 300px;
 }
 ::placeholder {
-    opacity: 0.7;
+    opacity: 0.6;
 }
-.formenviar {
-    margin-top: 30px;
-    grid-area: formenviar;
+
+.boton_formulario {
     display: flex;
+    align-items: center;
     justify-content: center;
-    width: 860px;
-    left: 0px;
 }
+.btn_form {
+    width: 180px;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    background-color: black;
+    padding: 5px;
+    color: white;
+    margin: 30px;
+    transition: 1s;
+    border: 1px solid white;
+
+}
+.btn_form:hover {
+    scale: 1.2;
+    box-shadow: 2px 2px 15px black;
+}
+
 .politicas_formulario{
-    width: 800px;
+    max-width: 800px;
     font-size: 1.3rem;
     margin: 30px auto;
     text-align: center;
@@ -183,10 +177,119 @@ textarea {
     justify-content: space-evenly;
 }
 
-.btn {
-    transition: 1s;
+@media(max-width:800px) {
+
+    
+    .formulario {
+        flex-flow: row wrap;
+    }
+    .politicas_formulario {
+        max-width: 550px;
+    }
+
 }
-.btn:hover {
-    transition: 1s;
-    scale: 1.2;
+@media(max-width:600px) { /* Ya en esta media querie configuramos el header para que se quede estatico arriba*/
+    .formulario textarea, .forminput {
+        width: 75%;
+        font-size: 0.9rem;
+    }
+    .form {
+        text-align: center;
+    }
+    .formleft {
+        padding-left: 0px;
+    }
+ 
+    .formarchivo {
+        display: none;
+    }
+    .formmensaje textarea{
+        width: 250px;
+    }
+    
+    .info_header {
+        flex-direction: column;
+    }
+    .header {
+        top: 0;
+        position: absolute;
+        width: 100%;
+        display: flex;
+        height: 16vh;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        background-color: white;
+        box-shadow: 3px 3px 5px #011126 ;
+        gap: 20px;
+    }
+    .info_header {
+        display: flex;
+        list-style-type: none;
+        margin-right: 40px;
+        gap: 30px;
+    }
+    .info_header button{
+        font-size: 1.2rem;
+        font-weight: bold;
+        padding: 5px 12px;
+        border-radius: 15px;
+        background-color:#D9D9D9;
+        color: black;
+        transition-duration: 0.7s;
+        
+    }
+    .info_header button:hover{
+        box-shadow: 3px 3px 15px #000000;
+        transform: scale(1.2);
+    }
+    .nombre_servicio{
+        font-size: 0.9rem;
+    }
+    .politicas_formulario {
+        max-width: 480px;
+        font-size: 1.15rem;
+    }
+    .titulo_formulario{
+        font-size: 0.9rem;
+    }
+    .btn_form {
+        padding: 3px;
+        width: 130px;
+        font-size: 1rem;
+    }
+    footer {
+        text-align: center;
+        gap: 15px;
+        flex-direction: column;
+        font-size: 1rem;
+        padding: 40px;    
+    }
+    .footer_logo {
+        width: 60px;
+    }
+    .separador {
+        margin: 80px 80px 0 80px;
+    }
+
+}
+
+@media(max-width:480px) {
+
+    .politicas_formulario {
+        max-width: 280px;
+        font-size: 1rem;
+    }
+
+    .formulario textarea {
+        width: 55%;   
+    }
+    .form input{
+        width: 55%;
+    }
+    .formmensaje textarea {
+        width: 200px;
+
+    }
+
 }

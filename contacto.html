@@ -21,46 +21,48 @@
     </header>
     <main>
         <h2 id="contacto_texto">Contacto</h2>
-            <div class="conteiner_formulario">
-                <div class="formtexto">
-                    <h2>¿Como podemos ayudarte?</h2>
-                    <h3>Completá el siguiente formulario por un asunto en particular y nos comunicaremos con vos</h3>
-                </div>
+        <div class="conteiner_formulario">
+            <div class="titulo_formulario">
+                <h2>¿Como podemos ayudarte?</h2>
+                <h3>Completá el siguiente formulario por un asunto en particular y nos comunicaremos con vos</h3>
+            </div>
             <form class="formulario">
-                <div class="form formnombre">
-                    <label for="nombre">Nombre completo</label><br>
-                    <input type="text" placeholder="Escribe aqui tu nombre" name="nombre" id="nombre" required>
-                </div>
+                <div class="formleft">
+                    <div class="form formnombre">
+                        <label for="nombre">Nombre completo</label><br>
+                        <input type="text" placeholder="Escribe aqui tu nombre" name="nombre" id="nombre" required>
+                    </div>  
 
-                <div class="form formemail">
-                    <label for="email">Ingrese su email</label><br>
-                    <input type="email" placeholder="ejemplo@gmail.com" name="email" id="email" required>
-                </div>
+                    <div class="form formemail">
+                        <label for="email">Ingrese su email</label><br>
+                        <input type="email" placeholder="ejemplo@gmail.com" name="email" id="email" required>
+                    </div>
 
-                <div class="form formtelefono">
-                    <label for="telefono">Ingrese su Telefono</label><br>
-                    <input type="tel" placeholder="11-1234-5678" name="telefono" id="telefono" required>
-                </div>
+                    <div class="form formtelefono">
+                        <label for="telefono">Ingrese su Telefono</label><br>
+                        <input type="tel" placeholder="11-1234-5678" name="telefono" id="telefono" required>
+                    </div>
 
-                <div class="form formasunto">
-                    <label for="asunto">Tipo de consulta</label><br>
-                    <textarea name="asunto" id="asunto" cols="45" rows="3" required placeholder="Titulo del asunto"></textarea>
+                    <div class="form formasunto">
+                        <label for="asunto">Tipo de consulta</label><br>
+                        <textarea name="asunto" id="asunto" cols="45" rows="3" required placeholder="Titulo del asunto"></textarea>
+                    </div>
                 </div>
+                <div class="formright"> 
+                    <div class="formmensaje">
+                        <label for="mensaje">Escriba su mensaje</label><br>
+                        <textarea name="mensaje" id="mensaje" cols="1" rows="1" required></textarea>
+                    </div>
 
-                <div class="formmensaje">
-                    <label for="mensaje">Escriba su mensaje</label><br>
-                    <textarea name="mensaje" id="mensaje" cols="60" rows="20" required></textarea>
+                    <div class="formarchivo">
+                        <p>Adjuntar(si es necesario)</p>
+                        <input type="file" name="archivo" id="archivo" class="boton_archivo">
+                    </div>
                 </div>
-
-                <div class="formarchivo">
-                    <p>Adjuntar(si es necesario)</p>
-                    <input type="file" name="archivo" id="archivo" class="boton_archivo">
-                </div>
-        
-                <div class="form formenviar">
-                    <input class="btn" type="submit" value="Enviar">
-                </div>
-            </form>  
+            </form>
+            <div class="boton_formulario">
+                <input class="btn_form" type="submit" value="Enviar">
+            </div>
         </div>
         <div class="politicas_formulario">
             <p>Al registrarte en nuestro sitio, aceptas los términos y condiciones del servicio. Por favor, lee detenidamente nuestros términos y condiciones antes de proceder</p>
@@ -76,6 +78,6 @@
         <h5>© 2024 Del Negro Services. All Rights Reserved</h5>
         <img src="fotos/logodn.jpg" alt="Logo pagina" class="footer_logo">
         <h5>Contacto<br>javier-dn@hotmail.com<br>1166809610</h5>
-</footer>
+    </footer>
 </body>
 </html>
