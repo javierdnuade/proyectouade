@@ -3,9 +3,9 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Poiret One", sans-serif;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
 }
-
 
 body {
     background-color: rgba(162, 184, 173, 0.549);   
@@ -68,7 +68,7 @@ main{
     text-align: center;
     justify-content: center;
     align-items: center;
-    margin: 50px 0;
+    margin: 100px 0px;
 }
 .card_info__contenido {
     display: flex;
@@ -86,7 +86,7 @@ main{
 
 }
 .card_info img{       
-    width: 250px;
+    width: 300px;
     border-radius: 50%;
     padding: 30px;
 }
@@ -100,7 +100,7 @@ main{
     flex-flow: column nowrap;
     gap: 50px;
     width: 100%;
-    margin: 40px 0 60px 50px;
+    margin: 40px 0 100px 50px;
     
 }
 .dedicado {

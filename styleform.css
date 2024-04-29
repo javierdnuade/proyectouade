@@ -3,8 +3,10 @@
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
-    font-family: "Poiret One", sans-serif;
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
 }
+
 
 
 body {
@@ -48,6 +50,7 @@ main{
     background-color:#D9D9D9;
     color: black;
     transition-duration: 0.7s;
+    
     
 }
 .info_header button:hover{
@@ -102,6 +105,7 @@ footer {
     gap: 40px;
     margin: auto;
     padding-left: 20px;
+    width: 60%;
 
 }
 .formright {
@@ -109,6 +113,8 @@ footer {
     flex-direction: column;
     gap: 50px;
     margin: auto;
+    width: 40%;
+
 }
 .form input {
     width: 80%;
@@ -285,7 +291,7 @@ footer {
         width: 55%;
     }
     .formmensaje textarea {
-        width: 200px;
+        width: 100%;
 
     }
 
